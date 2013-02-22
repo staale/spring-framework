@@ -218,7 +218,7 @@ class ConfigurationClassParser {
 		for (String memberClassName : metadata.getMemberClassNames()) {
 			ConfigurationMetadataReader reader = new ConfigurationMetadataReader(memberClassName);
 			AnnotationMetadata memberClassMetadata = reader.getReader().getAnnotationMetadata();
-			if (ConfigurationClassUtils.isConfigurationCandidate(memberClassMetadata)) {
+			if (ConfigurationClassUtils.isConfigurationCandidate(memberClassMetadata, this.metadataReaderFactory)) {
 				processConfigurationClass(reader.getConfigurationClass(configClass));
 			}
 		}
