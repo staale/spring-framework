@@ -22,7 +22,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
- * A single {@code condition} that must be {@linkplain #canBeRegistered matched} in order
+ * A single {@code condition} that must be {@linkplain #matches matched} in order
  * for a component to be registered.
  *
  * <p>Conditions are checked immediately before a component bean-definition is due to be

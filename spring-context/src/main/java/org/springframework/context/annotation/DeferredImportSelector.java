@@ -23,8 +23,8 @@ package org.springframework.context.annotation;
  * imports are {@code @Conditional}.
  *
  * <p>Implementations can also extend the {@link org.springframework.core.Ordered}
- * interface or use the {@link org.springframework.core.Order} annotation to indicate a
- * precedence against other {@link DeferredImportSelector}s.
+ * interface or use the {@link org.springframework.core.annotation.Order} annotation to
+ * indicate a precedence against other {@link DeferredImportSelector}s.
  *
  * @author Phillip Webb
  */
